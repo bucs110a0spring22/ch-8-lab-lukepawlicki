@@ -16,7 +16,7 @@ class StringUtility:
         
 
   def bothEnds(self):
-    return (self.string[0,1,-2,-1] if len(self.string[0,1,-2,-1])>2 else '')
+    return (self.string[0]+self.string[1]+self.string[-2]+self.string[-1] if len(self.string) >2 else '')
   
   # def fixStart(self):
   #   l 
